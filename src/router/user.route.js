@@ -25,8 +25,8 @@ router
   .get("/user/list/:id_user", getUserId)
   // .get("/user/list/name/:name", getUserByName)
 
-  .put("/user/update/:id_user", removeProfile, upload, updateUser)
-  .delete("/user/delete/:id_user", removeProfile, deleteUser)
+  .put("/user/update/:id_user", upload, updateUser)
+  .delete("/user/delete/:id_user", deleteUser)
   .delete("/chat/delete/:id_chat", deleteChat)
   
   .get("/chat/list/:id_user", getChat);
