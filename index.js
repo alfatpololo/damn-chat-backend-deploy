@@ -33,7 +33,8 @@ io.on('connection', (socket) => {
     socketController(io, socket);
 })
 
+const APP_PORT = process.env.PORT || 3005;
 
-server.listen(3005, () => {
-    console.log(`Server is running on port 3005`);
+server.listen(APP_PORT, () => {
+    console.log(`Server is running on port ${APP_PORT}`);
 })
