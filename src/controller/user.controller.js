@@ -1,6 +1,6 @@
 const userModel = require("../model/user.model");
 const { success, failed, succesWithToken } = require("../helper/response");
-
+const cloudinary = require ("../helper/cloudinary")
 //deklare bcyrpt
 const jwtToken = require("../helper/generateJWT");
 const bcyrpt = require("bcrypt");
