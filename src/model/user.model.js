@@ -50,7 +50,7 @@ const userModel = {
       });
     });
   },
-  updateUser: (id_user, full_name, username, email, phone, image, description) => {
+  updateUser: ({id_user, full_name, username, email, phone, image, description}) => {
     return new Promise((resolve, reject) => {
       db.query(
         `UPDATE users SET full_name = '${full_name}', username = '${username}', email = '${email}', phone = '${phone}', image = '${image}', description = '${description}' WHERE id_user = ${id_user}`,
