@@ -4,7 +4,7 @@ const userModel = {
   register: ({ username, email, phone, password, level, image }) => {
     return new Promise((resolve, reject) => {
       db.query(
-        `INSERT INTO users (username, email, password,level, image) VALUES ('${username}', '${email}', '${password}', ${level}, '${image}')`,
+        `INSERT INTO users (username, email, password, level, image) VALUES ('${username}', '${email}', '${password}', ${level}, '${image}')`,
         (err, result) => {
           if (!err) {
             resolve(result);

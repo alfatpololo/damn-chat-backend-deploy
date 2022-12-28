@@ -39,7 +39,7 @@ module.exports = {
           level: 0,
           image: "https://res.cloudinary.com/dobwcuvhd/image/upload/v1672033963/voxn2fpgiyjqqos6jnn3.jpg",
         };
-
+        console.log(data)
         userModel
           .register(data)
           .then((result) => {
@@ -104,7 +104,7 @@ module.exports = {
     const { full_name, username, email, phone, description } = req.body;
     const image = await cloudinary.uploader.upload(req.file.path);
     const data = {
-      id_user: parseInt(id), 
+      id_user: parseInt(id_user), 
       full_name, 
       username, 
       email, 
