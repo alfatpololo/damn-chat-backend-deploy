@@ -8,9 +8,7 @@ const timestamp = currentDate.getHours() + '' + currentDate.getMinutes() + '' + 
 
 const multerUpload = multer({
     storage: multer.diskStorage({
-        destination: (req, file, cb) => {
-            cb(null, './public');
-        },
+        
         filename: (req, file, cb) => {
             const name = path.basename(file.originalname);
             const ext = path.extname(file.originalname);

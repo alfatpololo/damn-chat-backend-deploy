@@ -37,7 +37,7 @@ module.exports = {
           email,
           password: hash,
           level: 0,
-          image: req.file ? req.file.filename : "default.png",
+          image: "https://res.cloudinary.com/dobwcuvhd/image/upload/v1672033963/voxn2fpgiyjqqos6jnn3.jpg",
         };
 
         userModel
@@ -99,12 +99,21 @@ module.exports = {
       });
   },
 
-  updateUser: (req, res) => {
+  updateUser: async (req, res) => {
     const id_user = req.params.id_user;
     const { full_name, username, email, phone, description } = req.body;
-    const image = req.file ? req.file.filename : "default.png";
+    const image = await cloudinary.uploader.upload(req.file.path);
+    const data = {
+      id_user: parseInt(id), 
+      full_name, 
+      username, 
+      email, 
+      phone, 
+      image: image.secure_url, 
+      description
+    }
     userModel
-      .updateUser(id_user, full_name, username, email, phone, image, description)
+      .updateUser(data)
       .then((result) => {
         success(res, result, "success", "Success update user");
       })
