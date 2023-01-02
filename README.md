@@ -60,7 +60,7 @@ This is an example of how to list things you need to use the software and how to
 
 - Clone the repository
 ```
-git clone https://github.com/brndnwjy/whirlpool-api
+git clone https://github.com/alfatpololo/damn-chat-backend-deploy
 ```
 - Go to repository folder
 ```
