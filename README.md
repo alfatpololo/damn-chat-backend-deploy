@@ -31,7 +31,7 @@
 
 <!-- About The Project -->
 ## About The Project
-RESTful API made with Node.js and Express.js for Whilpool App.
+Telegram Backend is a RESTful API used in Telegram Chat. This API handles every functions in Telegram Application, such as login, register, update profile, get lists of contacts and chat, and send message to other user.
 
 ### Built With
 This app was built with some technologies below:
@@ -117,8 +117,8 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- Related Projects -->
 ## Related Project
-:rocket: [`Whirlpool (Frontend)`](https://github.com/brndnwjy/whirlpool-app)
+:rocket: [`Dayum Chat (Frontend)`](https://github.com/alfatpololo/damn-chat-frontend-deploy)
 
-:rocket: [`Whirlpool App Demo`](https://whirlpool-app.vercel.app)
+:rocket: [`Dayum Chat App Demo`](https://damn-chat-frontend-deploy.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
